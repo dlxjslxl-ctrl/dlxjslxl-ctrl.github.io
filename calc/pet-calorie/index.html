@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>반려견·반려묘 하루 사료 칼로리 계산기</title>
+<meta name="description" content="몸무게와 상태를 넣으면 하루에 필요한 칼로리(kcal)와 사료 양을 대략 알려 드려요.">
+<meta property="og:title" content="반려견·반려묘 하루 사료 칼로리 계산기">
+<meta property="og:description" content="몸무게와 상태를 넣으면 하루에 필요한 칼로리(kcal)와 사료 양을 대략 알려 드려요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/calc/pet-calorie/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">생활 계산기</a></header>
+<main>
+<h1>반려견·반려묘 하루 사료 칼로리 계산기</h1>
+<p class="meta">업데이트 2026-09-30</p>
+<p>몸무게와 상태를 넣으면 하루에 필요한 칼로리(kcal)와 사료 양을 대략 알려 드려요.</p>
+<div class="calc"><label for="w">몸무게 (kg)</label><input id="w" type="number" step="any" inputmode="decimal"><label for="s">동물·상태</label><select id="s"><option value="1.6">강아지 — 중성화한 성견</option><option value="1.8">강아지 — 중성화 안 한 성견</option><option value="1.0">강아지 — 체중 감량 중</option><option value="3.0">강아지 — 4개월 미만 새끼</option><option value="2.0">강아지 — 4개월~1살</option><option value="1.4">강아지 — 노령견·활동 적음</option><option value="1.2">고양이 — 중성화한 성묘</option><option value="1.4">고양이 — 중성화 안 한 성묘</option><option value="0.8">고양이 — 체중 감량 중</option><option value="2.5">고양이 — 1살 미만 새끼</option><option value="1.1">고양이 — 노령묘·활동 적음</option></select><label for="k">사료 열량 (kcal/kg, 사료 봉투 뒷면 · 모르면 비우기)</label><input id="k" type="number" step="any" inputmode="decimal"><button onclick="calc()">계산하기</button><div class="result" id="out"></div></div>
+<script>function f(n,d){return Number(n).toLocaleString('ko-KR',{maximumFractionDigits:d===undefined?2:d});}
+function calc(){var w=parseFloat(document.getElementById('w').value),s=parseFloat(document.getElementById('s').value);var k=parseFloat(document.getElementById('k').value),o=document.getElementById('out');if(isNaN(w)||w<=0){o.textContent='몸무게를 넣어 주세요';return;}var rer=70*Math.pow(w,0.75),der=rer*s;var t='기초(RER) '+f(rer,0)+' kcal · 하루 권장 약 '+f(der,0)+' kcal';if(!isNaN(k)&&k>0)t+=' · 사료 약 '+f(der/k*1000,0)+' g';o.textContent=t+' (일반 참고값)';}</script>
+<h2>이렇게 계산해요</h2>
+<p>기초 에너지(RER) = 70 × 몸무게(kg)의 0.75 제곱이에요. 여기에 나이·중성화·활동량에 따른 배수를 곱해 하루 권장 칼로리를 구해요.</p><p><strong>일반적인 참고값이에요.</strong> 품종·건강 상태·간식 양에 따라 크게 달라지니, 정확한 양은 꼭 수의사와 상담해 주세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>간식도 포함인가요?</h3><p>간식은 하루 칼로리의 10% 이내로 하고, 그만큼 사료를 줄이는 것이 일반적인 권장이에요.</p>
+<h3>살이 계속 찌면요?</h3><p>2~4주마다 몸무게를 재 보고 조금씩 조절하세요. 급하게 줄이면 위험할 수 있으니 수의사와 상의하세요.</p>
+
+</main>
+<footer>생활 계산기 · 마지막 갱신 2026-09-30</footer>
+</body>
+</html>

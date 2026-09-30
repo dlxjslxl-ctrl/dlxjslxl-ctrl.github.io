@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D-day 계산기</title>
+<meta name="description" content="시험·기념일·여행까지 며칠 남았는지, 또는 며칠 지났는지 계산해요.">
+<meta property="og:title" content="D-day 계산기">
+<meta property="og:description" content="시험·기념일·여행까지 며칠 남았는지, 또는 며칠 지났는지 계산해요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/calc/d-day/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">생활 계산기</a></header>
+<main>
+<h1>D-day 계산기</h1>
+<p class="meta">업데이트 2026-09-30</p>
+<p>시험·기념일·여행까지 며칠 남았는지, 또는 며칠 지났는지 계산해요.</p>
+<div class="calc"><label for="d">날짜</label><input id="d" type="date"><label><input id="one" type="checkbox" style="width:auto"> 시작한 날을 1일로 세기 (사귄 날·백일 등)</label><button onclick="calc()">계산하기</button><div class="result" id="out"></div></div>
+<script>function calc(){var d=document.getElementById('d').value;if(!d)return;var t=new Date();var T=Date.UTC(t.getFullYear(),t.getMonth(),t.getDate());var p=d.split('-');var D=Date.UTC(+p[0],p[1]-1,+p[2]);var n=Math.round((D-T)/86400000);var o=document.getElementById('out');if(document.getElementById('one').checked&&n<=0){o.textContent=(1-n)+'일째';return;}o.textContent=n>0?'D-'+n+' ('+n+'일 남음)':(n==0?'D-day (오늘이에요!)':'D+'+(-n)+' ('+(-n)+'일 지남)');}</script>
+<h2>이렇게 계산해요</h2>
+<p>오늘 날짜와 고른 날짜의 차이를 날 수로 세요. 앞으로 남은 날은 D-숫자, 지난 날은 D+숫자로 보여 줘요.</p><p>'100일' 같은 기념일은 시작한 날을 1일로 세는 경우가 많아서, 체크하면 그렇게 계산해요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>수능 D-day 도 되나요?</h3><p>네, 수능 날짜를 넣으면 남은 날 수를 알려 줘요.</p>
+<h3>시간까지 계산되나요?</h3><p>날짜 단위로만 계산해요. 한국 시간 기준 오늘 날짜를 써요.</p>
+
+</main>
+<footer>생활 계산기 · 마지막 갱신 2026-09-30</footer>
+</body>
+</html>

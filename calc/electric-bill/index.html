@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주택용 전기요금 계산기 (추정)</title>
+<meta name="description" content="한 달 사용량(kWh)을 넣으면 주택용 전기요금을 대략 계산해 드려요.">
+<meta property="og:title" content="주택용 전기요금 계산기 (추정)">
+<meta property="og:description" content="한 달 사용량(kWh)을 넣으면 주택용 전기요금을 대략 계산해 드려요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/calc/electric-bill/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">생활 계산기</a></header>
+<main>
+<h1>주택용 전기요금 계산기 (추정)</h1>
+<p class="meta">업데이트 2026-09-30</p>
+<p>한 달 사용량(kWh)을 넣으면 주택용 전기요금을 대략 계산해 드려요.</p>
+<div class="calc"><label for="u">한 달 사용량 (kWh)</label><input id="u" type="number" step="any" inputmode="decimal"><label for="s">계절</label><select id="s"><option value="기타계절">기타계절</option><option value="여름(7~8월)">여름(7~8월)</option></select><button onclick="calc()">계산하기</button><div class="result" id="out"></div></div>
+<script>function f(n,d){return Number(n).toLocaleString('ko-KR',{maximumFractionDigits:d===undefined?2:d});}
+var R={"기준일": "2025-07-01", "설명": "한국전력 주택용(저압) 요금표 기준 추정값. 실제 청구액은 할인·검침일·연료비조정요금에 따라 달라져요.", "기타계절": {"구간": [200, 400], "기본요금": [910, 1600, 7300], "전력량요금": [120.0, 214.6, 307.3]}, "여름(7~8월)": {"구간": [300, 450], "기본요금": [910, 1600, 7300], "전력량요금": [120.0, 214.6, 307.3]}, "기후환경요금": 9.0, "연료비조정요금": 5.0, "부가세율": 0.1, "전력기금율": 0.027};
+function calc(){var u=parseFloat(document.getElementById('u').value),t=R[document.getElementById('s').value],o=document.getElementById('out');if(isNaN(u)||u<0){o.textContent='사용량을 넣어 주세요';return;}var g=t['구간'],p=t['전력량요금'],b=t['기본요금'];var lv=u<=g[0]?0:(u<=g[1]?1:2),e=0,prev=0;for(var i=0;i<3;i++){var top=i<2?g[i]:Infinity;if(u>prev){e+=(Math.min(u,top)-prev)*p[i];}prev=top;}var base=b[lv]+e+u*(R['기후환경요금']||0)+u*(R['연료비조정요금']||0);base=Math.floor(base/10)*10;var vat=Math.round(base*(R['부가세율']||0)),fund=Math.floor(base*(R['전력기금율']||0)/10)*10;o.textContent='추정 요금 약 '+f(Math.floor((base+vat+fund)/10)*10,0)+'원 (전기요금 '+f(base,0)+' + 부가세 '+f(vat,0)+' + 전력기금 '+f(fund,0)+')';}</script>
+<h2>이렇게 계산해요</h2>
+<p>주택용 전기요금은 쓴 양이 많을수록 1kWh 당 값이 비싸지는 '누진제'예요. 구간마다 다른 단가를 더하고, 구간에 맞는 기본요금·기후환경요금·연료비조정요금을 더한 뒤 부가세와 전력기금을 붙여요.</p><table><tr><th>계절</th><th>구간</th><th>기본요금</th><th>전력량요금</th></tr><tr><td>기타계절</td><td>200, 400 kWh 경계</td><td>910 / 1600 / 7300 원</td><td>120.0 / 214.6 / 307.3 원/kWh</td></tr><tr><td>여름(7~8월)</td><td>300, 450 kWh 경계</td><td>910 / 1600 / 7300 원</td><td>120.0 / 214.6 / 307.3 원/kWh</td></tr></table><p class="meta">요금표 기준일: 2025-07-01 · 기후환경요금 9.0원/kWh · 연료비조정요금 5.0원/kWh · 부가세 10% · 전력기금 2.7%</p><p><strong>결과는 추정값이에요.</strong> 복지 할인, 검침일, 요금 개편에 따라 실제 청구서와 다를 수 있어요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>여름에는 왜 더 싸게 나오나요?</h3><p>7~8월에는 누진 구간이 넓어져서 같은 양을 써도 비싼 구간에 덜 들어가요.</p>
+<h3>아파트는 다른가요?</h3><p>아파트는 단일계약·종합계약에 따라 달라요. 이 계산기는 일반 주택용 저압 기준이에요.</p>
+
+</main>
+<footer>생활 계산기 · 마지막 갱신 2026-09-30</footer>
+</body>
+</html>

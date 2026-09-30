@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>할인율·퍼센트 계산기</title>
+<meta name="description" content="할인 후 가격, 할인율, 몇 퍼센트인지, 증가·감소율을 한 번에 계산해요.">
+<meta property="og:title" content="할인율·퍼센트 계산기">
+<meta property="og:description" content="할인 후 가격, 할인율, 몇 퍼센트인지, 증가·감소율을 한 번에 계산해요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/calc/percent/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">생활 계산기</a></header>
+<main>
+<h1>할인율·퍼센트 계산기</h1>
+<p class="meta">업데이트 2026-09-30</p>
+<p>할인 후 가격, 할인율, 몇 퍼센트인지, 증가·감소율을 한 번에 계산해요.</p>
+<div class="calc"><label for="a">원래 값 (정가 · A)</label><input id="a" type="number" step="any" inputmode="decimal"><label for="b">할인율(%) · 바뀐 값 · B</label><input id="b" type="number" step="any" inputmode="decimal"><label for="k">계산 종류</label><select id="k"><option value="sale">할인율(%)을 넣고 → 할인 후 가격</option><option value="rate">바뀐 가격을 넣고 → 할인율</option><option value="part">A 는 B 의 몇 %</option><option value="chg">A → B 증가·감소율</option></select><button onclick="calc()">계산하기</button><div class="result" id="out"></div></div>
+<script>function f(n,d){return Number(n).toLocaleString('ko-KR',{maximumFractionDigits:d===undefined?2:d});}
+function calc(){var a=parseFloat(document.getElementById('a').value),b=parseFloat(document.getElementById('b').value);var k=document.getElementById('k').value,o=document.getElementById('out');if(isNaN(a)||isNaN(b)){o.textContent='두 칸을 모두 채워 주세요';return;}if(k=='sale'){o.textContent='할인 후 '+f(a*(1-b/100),0)+' (아낀 금액 '+f(a*b/100,0)+')';}else if(k=='part'){o.textContent=b==0?'B 가 0 이면 계산할 수 없어요':f(a)+' 은(는) '+f(b)+' 의 '+f(a/b*100)+'%';}else if(a==0){o.textContent='원래 값이 0 이면 계산할 수 없어요';}else if(k=='rate'){o.textContent='할인율 '+f((a-b)/a*100)+'%';}else{var r=(b-a)/a*100;o.textContent=(r>=0?'증가 ':'감소 ')+f(Math.abs(r))+'%';}}</script>
+<h2>이렇게 계산해요</h2>
+<p>할인 후 가격 = 정가 × (1 − 할인율 ÷ 100). 할인율 = (정가 − 판매가) ÷ 정가 × 100.</p><p>증가율 = (바뀐 값 − 원래 값) ÷ 원래 값 × 100 이에요. 결과가 음수면 감소예요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>30% 할인 후 20% 추가 할인은 50% 할인인가요?</h3><p>아니에요. 0.7 × 0.8 = 0.56 이라 실제로는 44% 할인이에요.</p>
+<h3>소수점은 어떻게 하나요?</h3><p>계산 결과는 소수 둘째 자리까지 보여 주고, 가격은 원 단위로 반올림해요.</p>
+
+</main>
+<footer>생활 계산기 · 마지막 갱신 2026-09-30</footer>
+</body>
+</html>

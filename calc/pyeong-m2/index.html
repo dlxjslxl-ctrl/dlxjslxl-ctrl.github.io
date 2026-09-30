@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>평수 ↔ ㎡ 변환 계산기</title>
+<meta name="description" content="아파트·원룸 넓이를 평과 제곱미터(㎡)로 바로 바꿔 보세요.">
+<meta property="og:title" content="평수 ↔ ㎡ 변환 계산기">
+<meta property="og:description" content="아파트·원룸 넓이를 평과 제곱미터(㎡)로 바로 바꿔 보세요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/calc/pyeong-m2/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">생활 계산기</a></header>
+<main>
+<h1>평수 ↔ ㎡ 변환 계산기</h1>
+<p class="meta">업데이트 2026-09-30</p>
+<p>아파트·원룸 넓이를 평과 제곱미터(㎡)로 바로 바꿔 보세요.</p>
+<div class="calc"><label for="p">평</label><input id="p" type="number" step="any" inputmode="decimal" oninput="fromP()"><label for="m">제곱미터(㎡)</label><input id="m" type="number" step="any" inputmode="decimal" oninput="fromM()"><div class="result" id="out"></div></div>
+<script>function f(n,d){return Number(n).toLocaleString('ko-KR',{maximumFractionDigits:d===undefined?2:d});}
+var K=400/121;
+function fromP(){var p=parseFloat(document.getElementById('p').value);if(isNaN(p))return;var m=p*K;document.getElementById('m').value=m.toFixed(2);document.getElementById('out').textContent=f(p)+'평 = '+f(m)+'㎡';}
+function fromM(){var m=parseFloat(document.getElementById('m').value);if(isNaN(m))return;var p=m/K;document.getElementById('p').value=p.toFixed(2);document.getElementById('out').textContent=f(m)+'㎡ = '+f(p)+'평';}</script>
+<h2>이렇게 계산해요</h2>
+<p>1평은 약 3.3058㎡ (정확히는 400/121㎡) 이에요. 평수에 3.3058 을 곱하면 ㎡, ㎡ 를 3.3058 로 나누면 평이 나와요.</p><p>아파트 광고의 '공급면적'과 '전용면적'은 서로 달라요. 실제로 사는 공간은 전용면적이에요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>84㎡ 는 몇 평인가요?</h3><p>약 25.4평이에요. 흔히 &#x27;34평형&#x27;이라 부르는 아파트는 공급면적 기준이라 숫자가 더 커요.</p>
+<h3>왜 평 대신 ㎡ 를 쓰나요?</h3><p>법으로 정한 공식 넓이 단위가 ㎡ 이기 때문이에요. 계약서·등기부에는 ㎡ 로 적혀요.</p>
+
+</main>
+<footer>생활 계산기 · 마지막 갱신 2026-09-30</footer>
+</body>
+</html>
