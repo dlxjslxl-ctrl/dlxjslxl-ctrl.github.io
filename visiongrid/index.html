@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Vision Grid는 결제, 할 일, 마감일처럼 놓치기 쉬운 것을 제때 보여 주는 모바일 앱을 만들어요. 카드루트, FadeToDo, 기한지기.">
-<meta name="theme-color" content="#05060A">
+<meta name="theme-color" content="#04050A">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vision Grid">
 <meta property="og:description" content="Vision Grid는 결제, 할 일, 마감일처럼 놓치기 쉬운 것을 제때 보여 주는 모바일 앱을 만들어요. 카드루트, FadeToDo, 기한지기.">
@@ -280,6 +280,8 @@ section[id]{scroll-margin-top:70px}
 .foot{border-top:1px solid var(--line);padding-block:36px 48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:24px 48px;font-size:14px;color:var(--fg-3)}
 .foot p + p{padding-top:8px}
 .foot .brand{color:var(--fg);padding-bottom:10px}
+.foot a{color:var(--fg-2);text-decoration:underline;text-underline-offset:3px;transition:color .15s ease}
+.foot a:hover{color:var(--fg)}
 
 /* 빠른 이동 창 */
 .kp{position:fixed;inset:0;z-index:40;display:grid;place-items:start center;padding:14vh 20px 0;background:rgba(2,3,6,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
@@ -580,8 +582,10 @@ section[id]{scroll-margin-top:70px}
 <footer class="wrap foot">
   <div>
     <p class="brand">Vision Grid</p>
+    <p>대표 박유철</p>
+    <p>문의 <a href="mailto:dlxjslxl@gmail.com">dlxjslxl@gmail.com</a></p>
+    <p><a href="privacy.html">개인정보 처리방침</a></p>
     <p>© 2026 Vision Grid</p>
-    <p>문의 메일은 곧 올릴게요.</p>
   </div>
   <div lang="en">
     <p>Vision Grid builds mobile apps that show the right thing at the right moment: the best card to pay with, today's to-dos on the lock screen, and deadlines found in a photo.</p>
