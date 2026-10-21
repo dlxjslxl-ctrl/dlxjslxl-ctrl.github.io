@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/</loc><lastmod>2026-10-20</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/vllm/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/n8n/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/webgpu/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/svelte/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/stripe/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/pinterest/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/perplexity/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/orca/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/ollama/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/moneyprinterturbo/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/minimax-h3/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/mediapipe/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/lumen/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/ltx/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/ltx-2-5/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/ida/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/humanizer/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/hostinger-vps/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/higgsfield/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/grok-bot/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/google-sheets/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/github/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/freepik/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/figma-mcp/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/fab/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/deepseek/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/cursor/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/copilot/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/beeble/</loc><lastmod>2026-10-22</lastmod></url>
+<url><loc>https://dlxjslxl-ctrl.github.io/tools/astra/</loc><lastmod>2026-10-22</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EB%AA%A8%EB%8D%B8/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/earshot/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/windscribe/</loc><lastmod>2026-10-20</lastmod></url>
@@ -10,7 +40,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/runway/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/refero-mcp/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/nicelydone-mcp/</loc><lastmod>2026-10-20</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/minimax-h3/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/midjourney/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/meshy-ai/</loc><lastmod>2026-10-20</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/lazyweb-mcp/</loc><lastmod>2026-10-20</lastmod></url>
@@ -48,7 +77,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/megascans/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/markitdown/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/lazyweb/</loc><lastmod>2026-10-19</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/ltx-2-5/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/homebrew/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/html/</loc><lastmod>2026-10-19</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/gumroad/</loc><lastmod>2026-10-19</lastmod></url>
@@ -88,7 +116,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/chrome/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/canvas/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/canva/</loc><lastmod>2026-10-17</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/astra/</loc><lastmod>2026-10-17</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/%EC%BF%A0%ED%8C%A1-%ED%8C%8C%ED%8A%B8%EB%84%88%EC%8A%A4/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/youtube/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/webgl/</loc><lastmod>2026-10-14</lastmod></url>
@@ -103,10 +130,8 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/loop-tools/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/instagram/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/hugging-face/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/higgsfield/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/hermes-agent/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/gmail/</loc><lastmod>2026-10-14</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/github/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/ghidra/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/ffmpeg/</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/cycles/</loc><lastmod>2026-10-14</lastmod></url>
@@ -151,7 +176,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/illustrator/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/hyperframes/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/flux/</loc><lastmod>2026-10-12</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/cursor/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/claude-opus/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/blender/</loc><lastmod>2026-10-12</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/after-effects/</loc><lastmod>2026-10-12</lastmod></url>
@@ -171,7 +195,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/tailwind-css/</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/playwright/</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/opus-5-5/</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/ollama/</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/mcp-model-context-protocol/</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/google-gemini/</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/github-copilot/</loc><lastmod>2026-10-10</lastmod></url>
@@ -195,7 +218,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/suno-ai/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/pixverse/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/paperclip/</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/orca/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/motionsites-ai/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/hostinger/</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/hailuo/</loc><lastmod>2026-10-08</lastmod></url>
@@ -215,7 +237,6 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/gpt-astra/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/docker/</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/app-store/</loc><lastmod>2026-10-07</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/n8n/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/tripo/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/three-js/</loc><lastmod>2026-10-06</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/google-ai-studio/</loc><lastmod>2026-10-06</lastmod></url>
@@ -241,9 +262,7 @@
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/nano-banana-2/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/gemini-3/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/gpt-image-2/</loc><lastmod>2026-10-03</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/figma-mcp/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/claude-md/</loc><lastmod>2026-10-03</lastmod></url>
-<url><loc>https://dlxjslxl-ctrl.github.io/tools/beeble/</loc><lastmod>2026-10-03</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/veo/</loc><lastmod>2026-10-02</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/sora/</loc><lastmod>2026-10-02</lastmod></url>
 <url><loc>https://dlxjslxl-ctrl.github.io/tools/powerpoint/</loc><lastmod>2026-10-02</lastmod></url>
