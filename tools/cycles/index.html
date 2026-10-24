@@ -34,13 +34,13 @@ footer{color:#888;font-size:.85em;text-align:center}
 <header><a href="../">AI 도구 사전</a></header>
 <main>
 <h1>Cycles — 요금·무료 여부·쓰는 법</h1>
-<p class="meta">업데이트 2026-10-24</p>
+<p class="meta">업데이트 2026-10-25</p>
 <p>Blender의 물리 기반 렌더 엔진.</p>
 <table><tr><th>무료 여부</th><td>확인 필요</td></tr><tr><th>가격</th><td>확인 필요</td></tr><tr><th>관련 글 수</th><td>10</td></tr></table>
 <h2>이런 분께 추천</h2>
 <p>Cycles는 Blender에 들어 있는 물리 기반 렌더 엔진입니다. 빛이 실제로 어떻게 움직이는지를 계산해서 사실적인 이미지를 만들고 싶은 사람에게 맞는 도구입니다. 3D 모델링이나 애니메이션을 하면서 최종 결과물의 품질을 높이고 싶은 창작자가 주로 찾을 수 있습니다. 가격이나 무료 여부, 최신 소식에 대한 정보는 주어진 자료에 없으므로 따로 확인이 필요합니다.</p>
 <h2>사람들은 이렇게 써요</h2>
-<ul><li>RTX 5070에서 DLSS 5를 적용하니 풀 해상도 렌더링보다 렌더링 시간이 줄고 화질 손실은 최소였다</li><li>투명 재질 방울을 렌더할 때 렌더 엔진을 Cycles로 바꾸고 GPU Compute, Denoise, 샘플 약 100으로 설정한다</li><li>EEVEE와 함께 이 블러 기법이 작동하며 실시간 렌더링이나 최종 렌더링 후 컴포지팅으로 적용할 수 있다</li><li>Noise Threshold 를 켜면 밝은 곳은 샘플을 적게, 어두운 곳은 많이 쓰도록 픽셀마다 샘플 수를 따로 정한다. Sampling 항목에서 체크박스를 켜고 값을 0.0300 으로 넣는다</li><li>유리처럼 빛이 통과하는 재질은 렌더 엔진을 Cycles 로 바꿔 빛 경로를 정확히 계산하게 한다</li><li>Cycles 에서 볼륨 안개는 렌더가 느리고 렌더 뒤 고치기 어렵다. 컴포지팅(Mist 패스)으로 넣으면 렌더 뒤에도 밝기·색을 바꿀 수 있다</li><li>Cycles 에서 GPU Compute 와 Denoise 를 켜고 OIDN 3 의 시간적 안정화로 자글거림을 줄이는 시연이 있었다 (BCON 2026)</li></ul>
+<ul><li>RTX 5070에서 DLSS 5를 적용하니 풀 해상도 렌더링보다 렌더링 시간이 줄고 화질 손실은 최소였다</li><li>투명 재질 방울을 렌더할 때 렌더 엔진을 Cycles로 바꾸고 GPU Compute, Denoise, 샘플 약 100으로 설정한다</li><li>EEVEE와 함께 이 블러 기법이 작동하며 실시간 렌더링이나 최종 렌더링 후 컴포지팅으로 적용할 수 있다</li><li>Noise Threshold 를 켜면 밝은 곳은 샘플을 적게, 어두운 곳은 많이 쓰도록 픽셀마다 샘플 수를 따로 정한다. Sampling 항목에서 체크박스를 켜고 값을 0.0300 으로 넣는다</li><li>유리처럼 빛이 통과하는 재질은 렌더 엔진을 Cycles 로 바꿔 빛 경로를 정확히 계산하게 한다</li><li>Cycles 에서 볼륨 안개는 렌더가 느리고 렌더 뒤 고치기 어렵다. 컴포지팅(Mist 패스)으로 넣으면 렌더 뒤에도 밝기·색을 바꿀 수 있다</li><li>Cycles 에서 GPU Compute 와 Denoise 를 켜고 OIDN 3 의 시간적 안정화로 자글거림을 줄이는 시연이 있었다 (BCON 2026)</li><li>무지갯빛 유리 렌더 설정: Color Management 의 View Transform 을 AgX, Look 을 High Contrast, 노출 -0.050·감마 0.850 을 기본으로 쓴다. 배경은 &#x27;iridescent texture&#x27; 이미지를 World 의 Image Texture → Hue/Saturation/Value(채도 1.250) → Background 로 연결한다</li></ul>
 <p class="meta">AI 활용 글 여러 개에서 이 도구가 나온 대목을 모아 정리했어요.</p>
 <h2>쓰는 법</h2>
 <ol><li>공식 사이트에서 가입해요 (무료 체험이 있는지 먼저 확인).</li><li>요금제 화면에서 무료로 쓸 수 있는 양과 유료 가격을 확인해요.</li><li>작은 작업 하나로 먼저 결과를 확인하고, 마음에 들면 유료로 바꿔요.</li></ol>
@@ -48,6 +48,6 @@ footer{color:#888;font-size:.85em;text-align:center}
 <ul><li><a href="../eevee/">EEVEE</a> — Blender의 실시간 렌더 엔진</li><li><a href="../adobe-illustrator/">Adobe Illustrator</a> — 벡터 기반 그래픽 디자인 소프트웨어로 스티커 카드를 정밀하게 제작할 수 있다.</li><li><a href="../beeble/">Beeble</a> — AI 기반 영상 조명 재설정 및 시각 효과 편집 도구</li><li><a href="../chatgpt/">ChatGPT</a> — OpenAI의 대형언어모델 기반 AI 어시스턴트</li><li><a href="../codex/">Codex</a> — OpenAI의 GPT 기반 코드 생성 모델.</li></ul>
 <p class="meta">가격·무료 여부는 정보 날짜 기준이에요. 바뀔 수 있으니 공식 사이트에서 꼭 확인하세요.</p>
 </main>
-<footer>AI 도구 사전 · 마지막 갱신 2026-10-24</footer>
+<footer>AI 도구 사전 · 마지막 갱신 2026-10-25 · <a href="https://dlxjslxl-ctrl.github.io/about/">소개</a> · <a href="https://dlxjslxl-ctrl.github.io/privacy/">개인정보처리방침</a> · <a href="https://dlxjslxl-ctrl.github.io/terms/">이용약관</a> · <a href="https://dlxjslxl-ctrl.github.io/contact/">문의</a></footer>
 </body>
 </html>
