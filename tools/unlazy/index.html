@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>unlazy — 요금·무료 여부·쓰는 법</title>
+<meta name="description" content="unlazy: Claude 같은 AI가 작업을 끝냈다고 말하기 전에 조건별 확인 명령을 실제로 돌려 증거를 남기게 하는 오픈소스 스킬이에요.">
+<meta property="og:title" content="unlazy — 요금·무료 여부·쓰는 법">
+<meta property="og:description" content="unlazy: Claude 같은 AI가 작업을 끝냈다고 말하기 전에 조건별 확인 명령을 실제로 돌려 증거를 남기게 하는 오픈소스 스킬이에요.">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/tools/unlazy/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">AI 도구 사전</a></header>
+<main>
+<h1>unlazy — 요금·무료 여부·쓰는 법</h1>
+<p class="meta">업데이트 2026-10-28</p>
+<p>Claude 같은 AI가 작업을 끝냈다고 말하기 전에 조건별 확인 명령을 실제로 돌려 증거를 남기게 하는 오픈소스 스킬이에요.</p>
+<table><tr><th>무료 여부</th><td>확인 필요</td></tr><tr><th>가격</th><td>확인 필요</td></tr><tr><th>관련 글 수</th><td>2</td></tr></table>
+<h2>이런 분께 추천</h2>
+<p>unlazy는 Claude 같은 AI가 작업을 끝냈다고 말하기 전에, 조건별 확인 명령을 실제로 실행해서 증거를 남기도록 돕는 오픈소스 스킬입니다. AI가 말로만 완료라고 보고하는 것이 걱정되는 개발자나, 결과를 검증 가능한 형태로 확인하고 싶은 팀에 맞습니다. 주어진 정보에는 가격이나 무료 여부가 나와 있지 않으므로, 이용 조건은 공식 자료에서 직접 확인해 보시기 바랍니다. 자세한 사용법이나 실제 사용 후기는 이 설명에 포함되어 있지 않습니다.</p>
+<h2>사람들은 이렇게 써요</h2>
+<ul><li>&#x27;완주표&#x27;라는 검증 원장을 먼저 적는다: ① 조건(잴 수 있는 결과 한 줄) ② 확인 명령과 기대 문구 ③ 실제 실행 결과 ④ 재검 순서</li><li>확인 명령이 exit 0(오류 없이 끝남)이고 기대 문구가 출력에 있어야만 [x] 로 체크한다. 보고 직전 모두 다시 검사하고, 못 지킨 조건은 &#x27;포기&#x27;로 남긴다</li><li>원본은 검사를 하나씩 돌려 큰 작업에선 오래 걸린다. 완주표를 겹치지 않는 묶음으로 나눠 여러 서브에이전트에 맡기는 요령이 있다</li><li>작업 전에 검증 체크리스트(GATES.md)를 먼저 쓰고 실행한 뒤 실제로 통과한 항목만 보고하게 한다. 깃허브 4천 스타 (작성자 수치)</li></ul>
+<p class="meta">AI 활용 글 여러 개에서 이 도구가 나온 대목을 모아 정리했어요.</p>
+<h2>쓰는 법</h2>
+<ol><li>공식 사이트에서 가입해요 (무료 체험이 있는지 먼저 확인).</li><li>요금제 화면에서 무료로 쓸 수 있는 양과 유료 가격을 확인해요.</li><li>작은 작업 하나로 먼저 결과를 확인하고, 마음에 들면 유료로 바꿔요.</li></ol>
+<h2>비슷한 도구</h2>
+<ul><li><a href="../computer-use/">Computer Use</a> — AI가 마우스와 키보드를 직접 조작해 계산, 파일 열기 등 컴퓨터 작업을 수행하는 플러그인.</li><li><a href="../ecc/">ECC</a> — 오픈소스 Agent Harness로 Claude Code의 작업 환경을 구축하는 운영체계다.</li><li><a href="../free-claude-code/">Free Claude Code</a> — Claude Code와 다른 코딩 에이전트를 무료로 실행할 수 있는 오픈소스 로컬 프록시.</li><li><a href="../humanizer/">Humanizer</a> — AI가 생성한 텍스트를 33가지 패턴의 다양한 톤으로 변환하고 자연스럽게 다듬는 Claude 스킬이다.</li><li><a href="../ui-ux-pro-max/">UI UX Pro Max</a> — AI가 검색 가능한 디자인 지식베이스를 활용해 규칙 기반 UI/UX를 생성하는 GitHub 오픈소스 스킬</li></ul>
+<p class="meta">가격·무료 여부는 정보 날짜 기준이에요. 바뀔 수 있으니 공식 사이트에서 꼭 확인하세요.</p>
+</main>
+<footer>AI 도구 사전 · 마지막 갱신 2026-10-28 · <a href="https://dlxjslxl-ctrl.github.io/about/">소개</a> · <a href="https://dlxjslxl-ctrl.github.io/privacy/">개인정보처리방침</a> · <a href="https://dlxjslxl-ctrl.github.io/terms/">이용약관</a> · <a href="https://dlxjslxl-ctrl.github.io/contact/">문의</a></footer>
+</body>
+</html>
