@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geometry Nodes — 요금·무료 여부·쓰는 법</title>
+<meta name="description" content="Geometry Nodes: Blender의 절차 모델링 및 애니메이션 시스템">
+<meta property="og:title" content="Geometry Nodes — 요금·무료 여부·쓰는 법">
+<meta property="og:description" content="Geometry Nodes: Blender의 절차 모델링 및 애니메이션 시스템">
+<link rel="canonical" href="https://dlxjslxl-ctrl.github.io/tools/geometry-nodes/">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif;
+line-height:1.7;color:#222;background:#fafafa;word-break:keep-all}
+header,main,footer{max-width:780px;margin:0 auto;padding:16px}
+header a{color:#222;text-decoration:none;font-weight:700;font-size:1.1em}
+main{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+h1{font-size:1.5em;line-height:1.4;margin:.3em 0}h2{font-size:1.2em;margin-top:1.6em}
+a{color:#0b63c5}img{max-width:100%;height:auto;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:.95em;display:block;overflow-x:auto}
+th,td{border:1px solid #e3e3e3;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f8}
+.disclosure{background:#fff4d6;border:2px solid #f0b400;color:#5a4000;font-size:1.05em;font-weight:600;
+padding:12px 14px;border-radius:10px;margin:0 0 16px}
+.meta{color:#777;font-size:.9em}.btn{display:inline-block;background:#0b63c5;color:#fff;padding:10px 18px;
+border-radius:8px;text-decoration:none;font-weight:600;margin:6px 0}
+.card{border:1px solid #eee;border-radius:10px;padding:12px;margin:12px 0}
+.calc label{display:block;margin:10px 0 4px;font-weight:600}
+.calc input,.calc select{width:100%;max-width:320px;padding:9px;font-size:1em;border:1px solid #ccc;border-radius:8px}
+.calc button{margin-top:12px;padding:10px 20px;font-size:1em;border:0;border-radius:8px;background:#0b63c5;color:#fff}
+.result{margin-top:14px;padding:12px;background:#eef6ff;border-radius:8px;font-size:1.1em;font-weight:600;min-height:1em}
+ul.pages{padding-left:1.1em}ul.pages li{margin:6px 0}
+footer{color:#888;font-size:.85em;text-align:center}
+</style>
+</head>
+<body>
+<header><a href="../">AI 도구 사전</a></header>
+<main>
+<h1>Geometry Nodes — 요금·무료 여부·쓰는 법</h1>
+<p class="meta">업데이트 2026-11-04</p>
+<p>Blender의 절차 모델링 및 애니메이션 시스템</p>
+<table><tr><th>무료 여부</th><td>확인 필요</td></tr><tr><th>가격</th><td>확인 필요</td></tr><tr><th>관련 글 수</th><td>20</td></tr></table>
+<h2>이런 분께 추천</h2>
+<p>Geometry Nodes는 Blender에 들어 있는 절차 모델링 및 애니메이션 시스템입니다. 노드를 연결해 형태를 만드는 방식이라, 같은 규칙으로 여러 모델을 자동으로 생성하거나 수정하고 싶은 사람에게 맞습니다. 3D 모델링이나 애니메이션 작업을 하면서 반복적인 작업을 줄이고 싶은 사용자에게 적합한 도구로 볼 수 있습니다. 가격이나 무료 여부, 최신 소식에 대한 정보는 주어진 자료에 없으므로 따로 확인이 필요합니다.</p>
+<h2>사람들은 이렇게 써요</h2>
+<ul><li>이미지의 색을 점 밀도와 굵기로 바꿔 평면 위에 천 질감 초상화를 만드는 설정법이 소개됐다</li><li>Empty 와 각 오브젝트 사이 거리를 Distance 노드로 재고 Map Range → Combine XYZ 의 Z → Translate Instances 에 이으면, Empty 가 움직일 때 도미노가 파도처럼 위아래로 움직인다. Collection Info 는 Transform Space 를 Relative 로, Separate Children 을 켜서 쓴다</li><li>깨진 벽돌담: 그리드 평면의 정점·면을 점으로 바꿔 벽돌을 인스턴스로 올리고 짝수·홀수 줄을 어긋나게 하면 쌓기 패턴이 된다. Brick Info 그룹 노드에 너비·깊이·높이·모르타르 값을 모아 두면 한 번만 고쳐도 전체에 반영된다. Geometry Proximity 와 Map Range 로 한 점 주변 범위의 벽돌만 지우고, 시뮬레이션 존에서 매 프레임 점을 추가해 파괴 영역을 칠한다. N</li><li>Geometry Nodes의 Raycast와 Simulation으로 캐릭터 발자국을 지면에 누적 표현하고 마스크로 셰이더까지 연결하는 방법 (글 기준)</li><li>「Blender 지오메트리 노드로 만드는 오프로드 차량 리그 generator」 글에도 나온다. 글 요약: Blenderesse의 무료 오프로드 차량 리그 generator로 경로를 따라 달리는 차량 애니메이션을 절차적으로 만든다.</li><li>「Blender 지오메트리 노드로 자동차 하나를 다른 차로 변형하기」 글에도 나온다. 글 요약: 두 자동차 컬렉션을 지오메트리 노드로 나누고 빈 오브젝트 위치에 따라 한 차가 다른 차로 바뀌는 효과를 만든다</li><li>「Blender 지오메트리 노드로 만드는 절차적 건물 붕괴 효과」 글에도 나온다. 글 요약: 층 하나를 평면으로 모델링해 지오메트리 노드로 건물 전체와 붕괴 효과를 자동 생성하는 방법</li></ul>
+<p class="meta">AI 활용 글 여러 개에서 이 도구가 나온 대목을 모아 정리했어요.</p>
+<h2>쓰는 법</h2>
+<ol><li>공식 사이트에서 가입해요 (무료 체험이 있는지 먼저 확인).</li><li>요금제 화면에서 무료로 쓸 수 있는 양과 유료 가격을 확인해요.</li><li>작은 작업 하나로 먼저 결과를 확인하고, 마음에 들면 유료로 바꿔요.</li></ol>
+<h2>비슷한 도구</h2>
+<ul><li><a href="../blender/">Blender</a> — 오픈소스 3D 모델링, 렌더링, 애니메이션 소프트웨어</li><li><a href="../maya/">Maya</a> — 3D 모델링, 애니메이션, VFX 제작을 위한 전문 소프트웨어</li><li><a href="../claude-motion/">Claude Motion</a> — 보고서나 차트를 짧은 애니메이션 설명 영상으로 만드는 기능</li><li><a href="../cycles/">Cycles</a> — Blender의 물리 기반 렌더 엔진.</li><li><a href="../eevee/">EEVEE</a> — Blender의 실시간 렌더 엔진</li></ul>
+<p class="meta">가격·무료 여부는 정보 날짜 기준이에요. 바뀔 수 있으니 공식 사이트에서 꼭 확인하세요.</p>
+</main>
+<footer>AI 도구 사전 · 마지막 갱신 2026-11-04 · <a href="https://dlxjslxl-ctrl.github.io/about/">소개</a> · <a href="https://dlxjslxl-ctrl.github.io/privacy/">개인정보처리방침</a> · <a href="https://dlxjslxl-ctrl.github.io/terms/">이용약관</a> · <a href="https://dlxjslxl-ctrl.github.io/contact/">문의</a></footer>
+</body>
+</html>
