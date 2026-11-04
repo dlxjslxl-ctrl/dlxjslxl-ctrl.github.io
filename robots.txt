@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 Sitemap: https://dlxjslxl-ctrl.github.io/sitemap.xml
+Sitemap: https://dlxjslxl-ctrl.github.io/benefits/sitemap.xml
 Sitemap: https://dlxjslxl-ctrl.github.io/calc/sitemap.xml
 Sitemap: https://dlxjslxl-ctrl.github.io/gifts/sitemap.xml
+Sitemap: https://dlxjslxl-ctrl.github.io/qnet/sitemap.xml
 Sitemap: https://dlxjslxl-ctrl.github.io/tools/sitemap.xml
